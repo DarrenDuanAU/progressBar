@@ -1,0 +1,1 @@
+@import url("http:/fonts.googleapis.com/css?family=Muli&display=swap");*{box-sizing:border-box}body{background-color:#f6f6fb;font-family:'Muli' sans-serif;display:flex;justify-content:center;align-items:center;height:100vh;overflow:hidden;margin:0}body .container{text-align:center}body .progess-container{display:flex;justify-content:space-between}
