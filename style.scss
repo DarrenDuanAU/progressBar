@@ -20,8 +20,24 @@ body {
     text-align: center;
   }
 
-  .progess-container {
+  .progress-container {
     display: flex;
     justify-content: space-between;
+    width: 350px;
+    max-width: 100%;
+    margin-bottom: 30px;
+    position: relative;
+
+    &::before {
+      content:'';
+      background-color: $line-boarder-empty;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: traslateY(-50%);
+      height: 4px;
+      width: 100%;
+      z-index:-1;
+    }
   }
 }
