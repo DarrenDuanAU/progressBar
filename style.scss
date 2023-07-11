@@ -40,4 +40,17 @@ body {
       z-index:-1;
     }
   }
+
+  .progress {
+    content:'';
+    background-color: $line-boarder-color;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: traslateY(-50%);
+    height: 4px;
+    width: 100%;
+    z-index:-1;
+    transition: 0.4s ease;
+  }
 }
