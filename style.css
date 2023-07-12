@@ -38,3 +38,53 @@ body .progress-container::before {
   width: 100%;
   z-index: -1;
 }
+
+body .progress {
+  content: '';
+  background-color: #3498db;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: traslateY(-50%);
+  height: 4px;
+  width: 100%;
+  z-index: -1;
+  transition: 0.4s ease;
+}
+
+body .circle {
+  background-color: #fff;
+  color: #999;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 3px solid #e0e0e0;
+  transition: 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body .circle.active {
+  border-color: #3498db;
+}
+
+body .btn {
+  background-color: #3498db;
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 8px 30px;
+  margin: 5px;
+  font-size: 14px;
+}
+
+body .btn:active {
+  transform: scale(0.95);
+}
+
+body .btn:disabled {
+  cursor: not-allowed;
+  background-color: #e0e0e0;
+}
