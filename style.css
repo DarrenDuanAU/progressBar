@@ -22,12 +22,11 @@ body .progress-container {
   display: flex;
   justify-content: space-between;
   width: 350px;
-  max-width: 100%;
   margin-bottom: 30px;
   position: relative;
 }
 
-body .progress-container::before {
+body .progress-back {
   content: '';
   background-color: #e0e0e0;
   position: absolute;
@@ -47,7 +46,7 @@ body .progress {
   left: 0;
   transform: traslateY(-50%);
   height: 4px;
-  width: 100%;
+  width: 0;
   z-index: -1;
   transition: 0.4s ease;
 }
